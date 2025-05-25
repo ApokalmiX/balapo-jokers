@@ -1,12 +1,164 @@
 let jokers = [
-  // {
-  //   name: "Joker",
-  //   text: [
-  //     "{C:mult}+4{} Mult"
-  //   ],
-  //   image_url: "img/j_joker.png",
-  //   rarity: "Common"
-  // }
+  {
+    name: "Golden Eye",
+    text: [
+    	"This joker gains {X:mult,C:white}X0.25{} Mult",
+			"every time {C:money}${}",
+			"is obtained during the round,",
+			"resets at the end of the round",
+			"{C:inactive}(Currently {X:mult,C:white}X1{}{C:inactive} Mult)"
+    ],
+    image_url: "img/j_golden_eye.png",
+    rarity: "Uncommon"
+  },
+  {
+    name: "Eighties Joker",
+    text: [
+ 			"{C:attention}Jokers{} grant their",
+			"{C:dark_edition}edition{} bonus when a",
+			"card from the same",
+			"{C:dark_edition}edition{} is scored"
+    ],
+    image_url: "img/j_eighties_joker.png",
+    rarity: "Rare"
+  },
+  {
+    name: "Reformatting",
+    text: [
+			"When {C:attention}Blind{} is selected,",
+			"remove the {C:dark_edition}edition{} of",
+			"the {C:attention}Joker{} to the right",
+			"and gains {X:mult,C:white}X1{} Mult",
+			"{C:inactive}(Currently {X:mult,C:white}X1{}{C:inactive} Mult)"
+    ],
+    image_url: "img/j_reformatting.png",
+    rarity: "Rare"
+  },
+  {
+    name: "Collector's Album",
+    text: [
+			"{C:dark_edition}Edition{} of cards",
+			"{C:attention}held in hand{}",
+			"counts in scoring"
+    ],
+    image_url: "img/j_collectors_album.png",
+    rarity: "Uncommon"
+  },
+  {
+    name: "Auralist",
+    text: [
+			"After {C:attention}5{} scoring",
+			"{C:attention}Ace{} played,",
+			"create an {C:spectral}Aura{} card",
+			"{C:inactive}(Currently {C:attention}0{C:inactive}/5)",
+			"{C:inactive}(Must have room)"
+    ],
+    image_url: "img/j_auralist.png",
+    rarity: "Uncommon"
+  },
+
+  {
+    name: "Ghost Joker",
+    text: [
+			"After selling {C:attention}1{} {C:dark_edition}Negative{} Joker",
+			"sell this card to apply {C:dark_edition}Negative{} to a random Joker",
+			"{C:inactive}(Currently {C:attention}0{C:inactive}/1)"
+    ],
+    image_url: "img/j_ghost_joker.png",
+    rarity: "Rare"
+  },
+  {
+    name: "Jailed Joker",
+    text: [
+			"Sell this card to",
+			"apply {C:attention}Eternal{} to",
+			"all other Jokers",
+			"{C:inactive}(If compatible)"
+    ],
+    image_url: "img/j_jailed_joker.png",
+    rarity: "Rare"
+  },
+  {
+    name: "Mouse Hole",
+    text: [
+			"Lowest-ranked card",
+			"of the played hand",
+			"give {X:mult,C:white}X1.5{} Mult when scored",
+			"{C:inactive}(Requires at least two different rank cards)"
+    ],
+    image_url: "img/j_mouse_hole.png",
+    rarity: "Uncommon"
+  },
+  {
+    name: "Inception",
+    text: [
+			"Played cards apply the {X:mult,C:white} Xmult{} of",
+			"the {C:attention}Joker{} to the right every {C:attention}3{} triggers"
+    ],
+    image_url: "img/j_inception.png",
+    rarity: "Rare"
+  },
+  {
+    name: "Straight to the Bed",
+    text: [
+			"Retrigger all cards played {C:attention}2{} additional times",
+			"if played hand contains a {C:attention}Straight{}"
+    ],
+    image_url: "img/j_straight_to_the_bed.png",
+    rarity: "Uncommon"
+  },
+
+  {
+    name: "Alizarin",
+    text: [
+			"Gain {C:attention}1{} charge each time a {C:red}Red Seal{} is discarded,",
+			"With each hand played distributes the charges as additional {C:attention}retriggers{} on each card played",
+			"{C:inactive}(Rounded down)",
+			"{C:inactive}(Currently {C:attention}+0{}{C:inactive} charge)"
+    ],
+    image_url: "img/j_alizarin.png",
+    rarity: "Uncommon"
+  },
+  {
+    name: "Caerulean",
+    text: [
+			"Scored {C:blue}Blue Seals{} give {X:mult,C:white}X1.5{} Mult for",
+			"each {C:planet}Planet{} card in your {C:attention}consumable{} area for their",
+			"specified {C:attention}poker hand{}"
+    ],
+    image_url: "img/j_caerulean.png",
+    rarity: "Uncommon"
+  },
+  {
+    name: "Gamboge",
+    text: [
+			"Scored {C:money}Gold Seals{}",
+			"give {C:money}$1{} for each",
+			"{C:money}Gold Seal{} card",
+			"held in hand"
+    ],
+    image_url: "img/j_gamboge.png",
+    rarity: "Uncommon"
+  },
+  {
+    name: "Zinzolin",
+    text: [
+			"{C:purple}Purple Seal{} have",
+			"{C:green}1 in 2{} chance to",
+			"create {C:spectral}Spectral{} card"
+    ],
+    image_url: "img/j_zinzolin.png",
+    rarity: "Uncommon"
+  },
+  {
+    name: "Stellium",
+    text: [
+			"When {C:attention}Blind{} is selected, applies {C:dark_edition}Negative{} to all",
+			"{C:planet}Planet{} cards in your {C:attention}consumable{} area"
+    ],
+    image_url: "img/j_stellium.png",
+    rarity: "Rare"
+  }
 ]
 
 // works the same. 
@@ -110,22 +262,14 @@ let blinds = [
 ]
 
 let shop_items = [
-  {
-    name: "Joker",
-    text: [
-      "{C:mult}+4{} Mult"
-    ],
-    image_url: "img/j_joker.png",
-    rarity: "Voucher"
-  },
-  {
-    name: "Joker",
-    text: [
-      "{C:mult}+4{} Mult"
-    ],
-    image_url: "img/j_joker.png",
-    rarity: "Pack"
-  },
+  // {
+  //   name: "Joker",
+  //   text: [
+  //     "{C:mult}+4{} Mult"
+  //   ],
+  //   image_url: "img/j_joker.png",
+  //   rarity: "Voucher"
+  // }
 ]
 
 let cols = {

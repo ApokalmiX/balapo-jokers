@@ -95,7 +95,7 @@ let jokers = [
       "{C:attention}+1{} hand size",
 			"after each hand played,",
 			"resets at the end of the round",
-			"{C:inactive}(Currently {C:attention}+#1#{C:inactive} hand size)"
+			"{C:inactive}(Currently {C:attention}+0{C:inactive} hand size)"
     ],
     image_url: "img/j_acceleration.png",
     rarity: "Rare"
@@ -129,7 +129,7 @@ let jokers = [
     name: "Caerulean",
     text: [
       "Scored {C:blue}Blue Seals{}",
-			"give {X:mult,C:white} X0.02 {} Mult per level",
+			"give {X:mult,C:white}X0.02{} Mult per level",
 			"of played {C:attention}poker hand{}",
 			"{C:inactive}(1 + {X:mult,C:white}0.02{C:inactive} x {C:attention}hand level{C:inactive})"
     ],

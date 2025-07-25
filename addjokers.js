@@ -129,9 +129,9 @@ let jokers = [
     name: "Caerulean",
     text: [
       "Scored {C:blue}Blue Seals{}",
-			"give {X:mult,C:white} X#1# {} Mult per level",
+			"give {X:mult,C:white} X0.02 {} Mult per level",
 			"of played {C:attention}poker hand{}",
-			"{C:inactive}(1 + {X:mult,C:white}#1#{C:inactive} x {C:attention}hand level{C:inactive})"
+			"{C:inactive}(1 + {X:mult,C:white}0.02{C:inactive} x {C:attention}hand level{C:inactive})"
     ],
     image_url: "img/j_caerulean.png",
     rarity: "Uncommon"

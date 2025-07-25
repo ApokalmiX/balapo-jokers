@@ -98,7 +98,7 @@ let jokers = [
 			"{C:inactive}(Currently {C:attention}+0{C:inactive} hand size)"
     ],
     image_url: "img/j_acceleration.png",
-    rarity: "Rare"
+    rarity: "Uncommon"
   },
   {
     name: "Straight to the Bed",

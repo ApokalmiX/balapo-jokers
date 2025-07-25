@@ -90,19 +90,25 @@ let jokers = [
     rarity: "Uncommon"
   },
   {
-    name: "Inception",
+    name: "Acceleration",
     text: [
-			"Played cards apply the {X:mult,C:white} Xmult{} of",
-			"the {C:attention}Joker{} to the right every {C:attention}3{} triggers"
+      "{C:attention}+1{} hand size",
+			"after each hand played,",
+			"resets at the end of the round",
+			"{C:inactive}(Currently {C:attention}+#1#{C:inactive} hand size)"
     ],
-    image_url: "img/j_inception.png",
+    image_url: "img/j_acceleration.png",
     rarity: "Rare"
   },
   {
     name: "Straight to the Bed",
     text: [
-			"Retrigger all cards played {C:attention}2{} additional times",
-			"if played hand contains a {C:attention}Straight{}"
+      "Retrigger all cards played",
+			"if played hand",
+			"contains a {C:attention}Straight{},",
+			"Retriggers an additional time",
+			"if the played hand also",
+			"contains a {C:attention}Flush{}"
     ],
     image_url: "img/j_straight_to_the_bed.png",
     rarity: "Uncommon"
@@ -122,9 +128,10 @@ let jokers = [
   {
     name: "Caerulean",
     text: [
-			"Scored {C:blue}Blue Seals{} give {X:mult,C:white}X1.5{} Mult for",
-			"each {C:planet}Planet{} card in your {C:attention}consumable{} area for their",
-			"specified {C:attention}poker hand{}"
+      "Scored {C:blue}Blue Seals{}",
+			"give {X:mult,C:white} X#1# {} Mult per level",
+			"of played {C:attention}poker hand{}",
+			"{C:inactive}(1 + {X:mult,C:white}#1#{C:inactive} x {C:attention}hand level{C:inactive})"
     ],
     image_url: "img/j_caerulean.png",
     rarity: "Uncommon"
@@ -132,9 +139,9 @@ let jokers = [
   {
     name: "Gamboge",
     text: [
-			"Scored {C:money}Gold Seals{}",
-			"give {C:money}$1{} for each",
-			"{C:money}Gold Seal{} card",
+      "Scored {C:money}Gold Seals{}",
+			"give {C:money}$3{} for each",
+			"{C:attention}Gold{} card",
 			"held in hand"
     ],
     image_url: "img/j_gamboge.png",
@@ -153,8 +160,9 @@ let jokers = [
   {
     name: "Stellium",
     text: [
-			"When {C:attention}Blind{} is selected, applies {C:dark_edition}Negative{} to all",
-			"{C:planet}Planet{} cards in your {C:attention}consumable{} area"
+      "{C:planet}Planet{} cards increase",
+			"hand level by the level",
+			"of the weakest {C:attention}poker hand{}"
     ],
     image_url: "img/j_stellium.png",
     rarity: "Rare"

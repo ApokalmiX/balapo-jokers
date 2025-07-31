@@ -2,11 +2,9 @@ let jokers = [
   {
     name: "Golden Eye",
     text: [
-    	"This joker gains {X:mult,C:white}X0.25{} Mult",
-			"every time {C:money}${}",
-			"is obtained during the round,",
-			"resets at the end of the round",
-			"{C:inactive}(Currently {X:mult,C:white}X1{}{C:inactive} Mult)"
+    	"{X:mult,C:white}X1.5{} Mult every",
+			"time {C:money}${} is obtained",
+			"during the hand played"
     ],
     image_url: "img/j_golden_eye.png",
     rarity: "Uncommon"
